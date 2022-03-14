@@ -1,0 +1,104 @@
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 3px solid #d9004b;
+  width: 100%;
+  height: 50px;
+  padding: 0 0 0 20px;
+}
+
+.navBar img {
+  height: 40px;
+  width: 100px;
+}
+
+.navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #d9004b;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.navLinks .loginPage {
+  background-color: #d9004b;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navLinks .loginPage:hover {
+  background-color: transparent;
+  color: #d9004b;
+}
+
+.mobileLinks {
+  display: none;
+}
+
+.mobileLinks button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin-right: 20px;
+}
+
+.hamburger span {
+  display: block;
+  width: 10px;
+  height: 2px;
+  margin: 1px;
+  position: relative;
+  background: #222222;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+}
+
+@media (max-width: 768px) {
+  .mobileLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navLinks {
+    display: none;
+  }
+}
+/*# sourceMappingURL=NavBar.module.css.map */

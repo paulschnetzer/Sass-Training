@@ -1,0 +1,77 @@
+@import "../../Styles/Variables.scss";
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 3px solid $red;
+  width: 100%;
+  height: 50px;
+  padding: 0 0 0 20px;
+  img {
+    height: 40px;
+    width: 100px;
+  }
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  a {
+    text-decoration: none;
+    color: $red;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 15px;
+    text-transform: uppercase;
+  }
+  .loginPage {
+    background-color: $red;
+    color: white;
+    transition: 0.3s;
+    &:hover {
+      background-color: transparent;
+      color: $red;
+    }
+  }
+}
+
+.mobileLinks {
+  display: none;
+  button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid $mediumgrey;
+    border-radius: 4px;
+    background: transparent;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $almostblack;
+    margin-right: 20px;
+  }
+}
+.hamburger {
+  span {
+    display: block;
+    width: 10px;
+    height: 2px;
+    margin: 1px;
+    position: relative;
+    background: $almostblack;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+  }
+}
+@media (max-width: $breakpoint) {
+  .mobileLinks {
+    display: flex;
+  }
+  .navLinks {
+    display: none;
+  }
+}
