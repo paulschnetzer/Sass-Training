@@ -1,0 +1,120 @@
+main {
+  width: 100%;
+  margin: 0 10%;
+}
+main h1 {
+  font-size: 39px;
+  color: #d9004b;
+  font-weight: bold;
+}
+main fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+main label,
+main legend {
+  font-size: 13px;
+  font-weight: 700;
+  color: #222222;
+}
+main button {
+  background-color: #d9004b;
+  color: white;
+  border: solid #d9004b;
+  height: 28px;
+  padding: 1px 6px;
+  margin: 0 3px;
+}
+main .buttonLarge {
+  width: 50px;
+}
+
+.inputWrapper {
+  display: flex;
+  margin: 10px 0px;
+}
+.inputWrapper .mainLabel {
+  width: 200px;
+}
+.inputWrapper .buttonContainer {
+  display: inline;
+}
+.inputWrapper .dateContainer {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputWrapper input[type=text],
+.inputWrapper select {
+  height: 28px;
+  width: 300px;
+}
+.inputWrapper input[type=date] {
+  width: 130px;
+  height: 28px;
+}
+.inputWrapper legend {
+  padding: 0;
+}
+.inputWrapper a {
+  color: #d9004b;
+  margin-right: 5px;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.tableControlls span {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0 5px;
+}
+.tableControlls select {
+  height: 28px;
+}
+
+.table {
+  background-color: white;
+  border: black solid 1px;
+  border-collapse: collapse;
+  font-size: 13px;
+  width: calc(80vw - 15px);
+  margin-top: 20px;
+}
+.table td,
+.table th {
+  border: solid 1px black;
+  height: 25px;
+}
+.table a {
+  color: #d9004b;
+  margin-right: 5px;
+  font-size: 13px;
+  text-decoration: none;
+}
+.table caption {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}
+
+@media only screen and (max-width: 900px) {
+  .inputWrapper {
+    flex-direction: column;
+  }
+
+  main {
+    margin: 0 1%;
+  }
+
+  .mainLabel {
+    margin: 5px 0;
+  }
+}/*# sourceMappingURL=Rechnungsportal.module.css.map */

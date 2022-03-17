@@ -1,0 +1,120 @@
+@import "../../Styles/Variables.scss";
+
+main {
+  width: 100%;
+  margin: 0 10%;
+  h1 {
+    font-size: 39px;
+    color: $red;
+    font-weight: bold;
+  }
+  fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  label,
+  legend {
+    font-size: 13px;
+    font-weight: 700;
+    color: $almostblack;
+  }
+  button {
+    background-color: $red;
+    color: white;
+    border: solid $red;
+    height: 28px;
+    padding: 1px 6px;
+    margin: 0 3px;
+  }
+  .buttonLarge {
+    width: 50px;
+  }
+}
+
+.inputWrapper {
+  display: flex;
+  margin: 10px 0px;
+  .mainLabel {
+    width: 200px;
+  }
+  .buttonContainer {
+    display: inline;
+  }
+  .dateContainer {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  input[type="text"],
+  select {
+    height: 28px;
+    width: 300px;
+  }
+  input[type="date"] {
+    width: 130px;
+    height: 28px;
+  }
+  legend {
+    padding: 0;
+  }
+  a {
+    color: $red;
+    margin-right: 5px;
+    font-size: 13px;
+    text-decoration: none;
+  }
+}
+.tableControlls {
+  span {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 5px;
+  }
+  select {
+    height: 28px;
+  }
+}
+
+.table {
+  background-color: white;
+  border: black solid 1px;
+  border-collapse: collapse;
+  font-size: 13px;
+  width: calc(80vw - 15px);
+  margin-top: 20px;
+  td,
+  th {
+    border: solid 1px black;
+    height: 25px;
+  }
+  a {
+    color: $red;
+    margin-right: 5px;
+    font-size: 13px;
+    text-decoration: none;
+  }
+  caption {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+.center {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}
+@media only screen and (max-width: $mediaquery) {
+  .inputWrapper {
+    flex-direction: column;
+  }
+  main {
+    margin: 0 1%;
+  }
+  .mainLabel {
+    margin: 5px 0;
+  }
+}
